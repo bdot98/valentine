@@ -10,6 +10,13 @@ function celebrate() {
         origin: { x: 0.5, y: 0.5 }
     });
 }
+function showPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
 
 // Function to handle button clicks
 function answer(choice) {
