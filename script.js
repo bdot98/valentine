@@ -14,7 +14,7 @@ function celebrate() {
 // Function to handle button clicks
 function answer(choice) {
     if (choice === 'yes') {
-          modal.style.display = "block";  // Show the modal
+          //modal.style.display = "block";  // Show the modal
              document.getElementById("modalMessage").innerText = "Yay! You're my Valentine! 💖";
         document.getElementById("modalImage").src = "pic.jpg"; // Change this to your image file
         document.getElementById("valentineModal").style.display = "block";
