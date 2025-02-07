@@ -14,7 +14,10 @@ function celebrate() {
 // Function to handle button clicks
 function answer(choice) {
     if (choice === 'yes') {
-        modal.style.display = "block";  // Show the modal
+          //  modal.style.display = "block";  // Show the modal
+             document.getElementById("modalMessage").innerText = "Yay! You're my Valentine! 💖";
+        document.getElementById("modalImage").src = "pic.jpg"; // Change this to your image file
+        document.getElementById("valentineModal").style.display = "block";
         celebrate();  // Trigger the confetti effect
     } else if (choice === 'no') {
         if (noButtonSize > 0.2) {
@@ -28,5 +31,5 @@ function answer(choice) {
 
 // Function to close the modal
 function closeModal() {
-    modal.style.display = "none";
+    document.getElementById("valentineModal").style.display = "none";
 }
