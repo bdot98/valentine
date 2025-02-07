@@ -18,7 +18,7 @@ function answer(choice) {
         document.getElementById("modalMessage").innerText = "Yay! You're my Valentine! 💖";
         
         // Set the image inside the modal (change to your actual image filename)
-        document.getElementById("modalImage").src = "valentine.jpg"; 
+        document.getElementById("modalImage").src = "pic.jpg"; 
         
         // Display the modal
         document.getElementById("valentineModal").style.display = "block";
