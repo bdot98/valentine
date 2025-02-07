@@ -14,14 +14,12 @@ function celebrate() {
 // Function to handle button clicks
 function answer(choice) {
     if (choice === "yes") {
+        document.getElementById("valentineModal").style.display = "block";
         // Set the message inside the modal
         document.getElementById("modalMessage").innerText = "Yay! You're my Valentine! 💖";
         
         // Set the image inside the modal (change to your actual image filename)
         document.getElementById("modalImage").src = "pic.JPG"; 
-        
-        // Display the modal
-        document.getElementById("valentineModal").style.display = "block";
         celebrate();  // Trigger the confetti effect
     } else if (choice === 'no') {
         if (noButtonSize > 0.2) {
